@@ -104,7 +104,7 @@ nav ul li a.active, nav ul li a:hover {
 .categories li{
     margin: 20px;
     width: 200px;
-    background-color: orange;
+    background-color: yellow;
     border-radius: 10px;
 }
 .categories img {
