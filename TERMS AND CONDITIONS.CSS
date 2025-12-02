@@ -1,0 +1,106 @@
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url('bg.jpg');
+    color: black;
+}
+
+
+nav {
+    background: orange;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    border-radius: 1000px;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover, .active {
+    color: blue;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: yellow;
+    border-radius: 70px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: blue;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.section {
+    margin-bottom: 25px;
+}
+
+.collapsible {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    padding: 12px 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: orange;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.collapsible:hover {
+    background-color: orange;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: green;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.content p {
+    margin: 10px 0;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: blue;
+}
+
+@media(max-width: 600px){
+    .container{
+        padding: 15px;
+    }
+}
