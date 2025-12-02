@@ -1,0 +1,71 @@
+header {
+  background-color: deepskyblue;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 25px;
+}
+
+.product {
+  width: 30%;
+  background-color: white;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+  padding: 10px;
+  border-radius: 25px;
+  margin-right: 2%;
+  margin-left: 2%;
+
+}
+
+.li{
+
+
+}
+
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: deepskyblue;
+  color: white;
+  border-radius: 25px;
+}
+
+.cards1 {
+
+  display: flex;
+  padding: 5%;
+  justify-content: space-between;
+
+}
+
+.cards2 {
+  display: flex;
+  padding: 5%;
+  justify-content: space-between;
+
+}
+
+.cards3 {
+  display: flex;
+  padding: 5%;
+  justify-content: space-between;
+
+}
+
+.img-text {
+  text-align: left;
+  text-shadow: 10px;
+  text-decoration: solid;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+body {
+
+
+  background-image: url(bg2.jpeg);
+  
+}
