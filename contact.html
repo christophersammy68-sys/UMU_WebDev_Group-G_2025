@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Group G ElectroMart</title>
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1041/1041384.png">
+    <link rel="stylesheet" href="styles.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Nav bar-->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-microchip"></i>
+                <span>.Group G.<br>ElectroMart</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="PRODUCTS.html"><i class="fas fa-store"></i> Products</a></li>
+                <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="SERVICES.HTML"><i class="fas fa-laptop"></i>Services</a></li>               
+                <li><a href="TERMS AND CONDITIONS.HTML"><i class="fas fa-shield-alt"></i> Terms and Conditions</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <header class="page-header">
+        <div class="header-overlay"></div>
+        <div class="container">
+            <h1><i class="fas fa-phone"></i> Contact Us</h1>
+            <p>Do you have a question about our products, services or a query? Hit us up!</p>
+        </div>
+    </header>
+    <!--Contact Section-->
+    <main class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2><i class="fas fa-map-marker-alt"></i> How to Reach Us</h2>
+                    <p style="color: black ; font-weight: bold;">You can find us here or give us a call:</p>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Address</h3>
+                            <p>Electronic Street<br>Nkozi, Uganda</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Phone</h3>
+                            <p>+256 700 123 456<br>+256 700 789 012</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>info@group.g.electromart.ug<br>support@group.g.electromart.ug</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>We're Open</h3>
+                            <p>Mon - Fri: 9am - 7pm<br>Saturday: 10am - 6pm<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h3>Connect With Us</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Form-->
+                <div class="contact-form-wrapper">
+                    <h2><i class="fas fa-paper-plane"></i> Send us a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i> Your Name
+                            </label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i> Email
+                            </label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">
+                                <i class="fas fa-phone"></i> Contact
+                            </label>
+                            <input type="tel" id="phone" name="phone" placeholder="0700 123 456" required>
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">
+                                <i class="fas fa-tag"></i> What's this about?
+                            </label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Choose one...</option>
+                                <option value="general">Just saying hi</option>
+                                <option value="product">Ask about a product</option>
+                                <option value="order">Where's my order?</option>
+                                <option value="support">Need help with something</option>
+                                <option value="complaint">Have a complaint</option>
+                                <option value="feedback">Share feedback</option>
+                            </select>
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment-alt"></i> Your Message To Group G ElectroMart
+                            </label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell us what's on your mind..." required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Send me updates about new products and deals
+                            </label>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Your Message
+                        </button>
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
+                </div>
+            </div>
+            <!--Why Section-->
+            <div class="why-contact">
+                <h2><i class="fas fa-question-circle"></i> Why Contact Us?</h2>
+                <p class="section-intro" style="color: white;">We're here to help you with everything you need!</p>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>24/7 Support</h3>
+                        <p>Get help anytime you need it. Our customer-friendly team is always ready to assist you.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h3>Fast Response</h3>
+                        <p>We respond to all inquiries within 24 hours, usually much faster! Feel free to reach out to us.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Expert Advice</h3>
+                        <p>Get professional recommendations from our electronics specialists at no cost.</p>
+                    </div>
+                   
+                </div>
+            </div>
+            <!--Contact summary-->
+            <div class="quick-contact">
+                <h2><i class="fas fa-store"></i> Visit Our Shop</h2>
+                <div class="address-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Electronic Street</h3>
+                        <p>Nkozi, Uganda</p>
+                        <p class="directions">Easy to find, right at the equator-line!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-microchip"></i> ElectroMart</h3>
+                    <p>Your go-to shop for all electronics. We've got all you need!</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="terms.html">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +256 700 123 456</p>
+                    <p><i class="fas fa-envelope"></i> info@group.g.electromart.ug</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Nkozi, Uganda</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Group G ElectroMart. All rights reserved.</p>
+                <p class="student-info">
+                    <strong>RESTY NAKALAWA MUKASA<br>2025-B291-11276<br>BACHELOR OF SCIENCE IN COMPUTER SCIENCE</strong> 
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
