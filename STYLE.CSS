@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: url('IMAGES/BACKGROUND\ 3.png')
+    background: url('BACKGROUND\ 3.png')
 }
 
 nav {
@@ -39,7 +39,7 @@ nav a:hover, .active {
 .page-header {
     text-align: center;
     padding: 50px 20px;
-    background: url('IMAGES/BACKGROUND\ 2.jpg');
+    background: url('BACKGROUND\ 2.jpg');
     border-radius: 200px;
     color: orange;
 }
