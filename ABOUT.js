@@ -1,43 +1,37 @@
-// script.js
-
-// Tab Functionality for Mission/Vision
-document.addEventListener('DOMContentLoaded', function() {
-    const tabButtons = document.querySelectorAll('.tab-button');
-    const tabPanes = document.querySelectorAll('.tab-pane');
-
-    tabButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const targetTab = button.getAttribute('data-tab');
-
-            // Remove active class from all buttons and panes
-            tabButtons.forEach(btn => btn.classList.remove('active'));
-            tabPanes.forEach(pane => pane.classList.remove('active'));
-
-            // Add active class to current button and corresponding pane
-            button.classList.add('active');
-            document.getElementById(targetTab).classList.add('active');
+ // reading more
+        document.querySelectorAll(".read-more-btn").forEach(btn=>{
+            btn.addEventListener("click", ()=>{
+                const member = btn.closest(".team-member");
+                const shortBio = member.querySelector(".bio-short");
+                const fullBio = member.querySelector(".bio-full");
+                if(fullBio.style.display === "block") {
+                    fullBio.style.display = "none";
+                    shortBio.style.display = "block";
+                    btn.textContent = "Read More";
+                } else {
+                    fullBio.style.display = "block";
+                    shortBio.style.display = "none";
+                    btn.textContent = "Read Less";
+                }
+            });
         });
-    });
-});
 
-// Read More Toggle Function for Team Bios
-function toggleBio(button) {
-    const teamMember = button.closest('.team-member');
-    const bioShort = teamMember.querySelector('.bio-short');
-    const bioFull = teamMember.querySelector('.bio-full');
-    const icon = button.querySelector('i');
+        // scroll to top button
+        const scrollBtn = document.getElementById("scrollTopBtn");
+        window.addEventListener("scroll", () => {
+            scrollBtn.style.display = window.scrollY > 200 ? "block" : "none";
+        });
+        scrollBtn.addEventListener("click", ()=>window.scrollTo({top:0, behavior:"smooth"}));
 
-    if (bioFull.style.display === 'none') {
-        bioFull.style.display = 'inline';
-        bioShort.style.display = 'none';
-        button.textContent = 'Read Less ';
-        button.classList.add('active');
-    } else {
-        bioFull.style.display = 'none';
-        bioShort.style.display = 'block';
-        button.textContent = 'Read More ';
-        button.classList.remove('active');
-    }
-    // Append the icon back to the button after changing text
-    button.appendChild(icon);
-}
+        // reveal when scrolling
+        const revealEls = document.querySelectorAll(".reveal");
+        function revealOnScroll() {
+            const trigger = window.innerHeight * 0.85;
+            revealEls.forEach(el => {
+                if(el.getBoundingClientRect().top < trigger) {
+                    el.classList.add("active");
+                }
+            });
+        }
+        window.addEventListener("scroll", revealOnScroll);
+        window.addEventListener("DOMContentLoaded", revealOnScroll);
